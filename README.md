@@ -14,6 +14,11 @@ This repository is based on the course on mobile robotics interface with ROS Noe
     - Encoders interfacing
     - ROS Service Nodes
     - Drove robot through Services on Time.
+- **Section 4:** Odometery publishing Car Driving
+    - Encoders ticks profiling
+    - Odom differential Drive Rviz
+    - transforms
+    
 
 ### Structure
 - **esp_src** : Contains scripts for esp32 microcontroller

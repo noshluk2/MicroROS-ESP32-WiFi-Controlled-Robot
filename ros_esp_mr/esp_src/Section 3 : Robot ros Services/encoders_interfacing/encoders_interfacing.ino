@@ -3,8 +3,8 @@
 #include <std_msgs/Int16.h>
 
 
-const int enc_r = 18;
-const int enc_l = 5;
+const int enc_r = 5;
+const int enc_l = 18;
 int count_r=0;
 int count_l=0;
 
