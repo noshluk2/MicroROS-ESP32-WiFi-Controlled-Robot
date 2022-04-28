@@ -21,7 +21,7 @@ This repository is based on the course on mobile robotics interface with ROS Noe
 ## About this Repository
 We will start with installation of **Rosserial Package**  installation into our system . Which is going to be utilized for ESP32 and ROS Communication
 
-[![alt text](https://github.com/noshluk2/ROS-ESP32-Mobile-Robotics/blob/main/ros_esp_mr/images/cover.png)](https://www.udemy.com/course/mastering-mobile-robot-with-ros-ardunio-car-sensors-to-ros/?couponCode=ROS_HW "Click to Watch Intro Video")
+[![alt text](https://github.com/noshluk2/ROS-ESP32-Mobile-Robotics/blob/main/ros_esp_mr/images/cover.png)](https://www.udemy.com/course/mastering-mobile-robot-with-ros-ardunio-car-sensors-to-ros/?couponCode=APRIL_END "Click to Watch Intro Video")
 ----
 
 - **esp_src** : Contains scripts for esp32 microcontroller
@@ -111,7 +111,7 @@ source ~/catkin_ws/devel/setup.bash
 ---
 ## Link to the Course
 
-**[[Discounted Link]](https://www.udemy.com/course/mastering-mobile-robot-with-ros-ardunio-car-sensors-to-ros/?couponCode=ROS_HW)**
+**[[Discounted Link]](https://www.udemy.com/course/mastering-mobile-robot-with-ros-ardunio-car-sensors-to-ros/?couponCode=APRIL_END)**
 
 ----
 
