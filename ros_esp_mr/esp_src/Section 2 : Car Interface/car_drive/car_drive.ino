@@ -18,6 +18,7 @@ const uint8_t channel_R= 1;
 void setup(){
 
 Serial.begin(115200);
+pin_def();
 stop();
 Serial.println("Get Ready");
 delay(2000);
