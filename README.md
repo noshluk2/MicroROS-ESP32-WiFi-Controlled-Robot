@@ -1,125 +1,67 @@
-# ESP32 Based ROS  Mobile Robot
+# MicroROS ESP32 WiFi Controlled Robot
 
-### Introduction
-This repository is based on the course on mobile robotics interface with ROS Noetic
+Welcome to the MicroROS ESP32 WiFi controlled robot project! This repository contains all the necessary files and instructions to build, program, and integrate a fully functional robot using the ESP32 and MicroROS with ROS2. -> [Course Link](https://www.udemy.com/course/mastering-mobile-robot-with-ros-ardunio-car-sensors-to-ros/?couponCode=MICROROS-UPDATE)
+![main](https://github.com/Robotisim/MicroROS-Wifi-Controlled-ESP32-Robot/blob/main/resources/thumbnail.png)
+## Introduction
 
+If you're passionate about robotics and eager to dive into hands-on hardware and ROS2 projects, this course is perfect for you. We'll guide you step-by-step in building a fully functional robot using the ESP32 and MicroROS with ROS2 over Wifi.
 
+### Course Overview
 
-<details open="open">
-  <summary>Table of Contents</summary>
-  <ol>
-    <li><a href="#About-this-Repository">About This Repository</a></li>
-    <li><a href="#Using-this-Repository">Using this Repository</a></li>
-        <li><a href="#Features">Features</a></li>
-    <li><a href="#Pre-Course-Requirments">Pre-Course Requirments</a></li>
-    <li><a href="#Link-to-the-Course">Link to the Course</a></li>
-    <li><a href="#Instructors">Instructors</a></li>
-    <li><a href="#License">License</a></li>
-  </ol>
-</details>
+**Section 1: Building the Robot**
+- Assemble your robot from the ground up
+- Utilize 3D-printed parts and resources we provide
+- Learn about electronic connections and power distribution
 
-## About this Repository
-We will start with installation of **Rosserial Package**  installation into our system . Which is going to be utilized for ESP32 and ROS Communication
+**Section 2: Basic Programming**
+- Get started with programming using PlatformIO to control your robot's movements
+- Write simple code to drive the robot and navigate basic paths
+- Create your custom libraries for motor driving
+- Integrate the OLED display into your robot
 
-[![alt text](https://github.com/noshluk2/ROS-ESP32-Mobile-Robotics/blob/main/ros_esp_mr/images/cover.png)](https://www.udemy.com/course/mastering-mobile-robot-with-ros-ardunio-car-sensors-to-ros/?couponCode=APRIL_END "Click to Watch Intro Video")
-----
+**Section 3: MicroROS Integration**
+- Integrate MicroROS with your ESP32 robot
+- Enhance your robot’s capabilities with advanced communication using ROS2
 
-- **esp_src** : Contains scripts for esp32 microcontroller
-- **src** : contains scripts of nodes basedon ROS1
-- **notes** : Contains all lecture notes taught during the course
+By the end of this course, you'll have a deeper understanding of robotics, from hardware assembly to software integration, and you'll walk away with a robot that you built and programmed yourself. Join us on this exciting journey into the world of robotics!
 
-Source Codes and lectures are arranged with the following Order
+### Directory Details
 
-    - **Section 1:** Basic ROS - ESP32 Interfacing
-        - Led Toggling
-        - Ultrasonic Sensor controlling Turtlesim
-    - **Section 2:** ROS based Car driving
-        - Motor Controlling
-        - cmd_vel to Pwm Serial
-        - Car Control over Wifi
-    - **Section 3:** Robot car and ROS services
-        - Encoders interfacing
-        - ROS Service Nodes
-        - Drove robot through Services on Time.
-    - **Section 4:** Odometery publishing Car Driving
-        - Encoders ticks profiling
-        - Odom differential Drive Rviz
-        - transforms
+- **microROS_bot/include**: This directory contains the README file for the include directory, where you can provide information about the headers and any specific instructions or documentation.
 
+- **microROS_bot/lib**: This directory houses different libraries used in the project.
+  - **motor_control**: Contains `motor_control.cpp` and `motor_control.h` files for controlling the robot's motors.
+  - **oled_display**: Contains `oled_display.cpp` and `oled_display.h` files for managing the OLED display integration.
+  - **ros_communication**: Contains `ros_communication.cpp` and `ros_communication.h` files for integrating ROS communication capabilities.
+  - **README**: Provides information about the libraries and their usage.
 
+- **microROS_bot/platformio.ini**: This is the PlatformIO configuration file, which contains the settings and dependencies for the project.
 
-## Using this Repository
-* Clone the repository in you Workspace
-```
-mkdir -p ~/catkin_ws/src ## if not already created
-cd ~/catkin_ws/src
-git clone https://github.com/noshluk2/ROS-ESP32-Mobile-Robotics.git
-```
-* Source your ROS installation
- ```
-source /opt/ros/noetic/setup.bash
- ```
-- Build your workspace
- ```
- cd ~/catkin_ws
- catkin_make
-  ```
+- **microROS_bot/src**: Contains the main source code file `main.cpp`, which is the entry point of the robot's program.
 
+- **microROS_bot/test**: Contains a README file for providing information about any tests or testing framework used in the project.
 
-* Source your Workspace in any terminal you open to Run files from this workspace ( Basic thing of ROS )
-```
-source ~/catkin_ws/devel/setup.bash
-```
+- **resources**: This directory includes all the resources needed for building the robot.
+  - **3d models**: Contains STL files for 3D printing the robot parts.
+    - `base.stl`, `caster_holder.stl`, `cover.stl`, `motor_holder.stl`
+  - **circuit_design.png**: Image of the circuit design for the robot.
+  - **robot_model.png**: Image of the complete robot model.
 
-----
-## Features
-* **TurtleSim Obstical Avoiding using real World Sensor**
-  -  ![alt text](https://github.com/noshluk2/ROS-ESP32-Mobile-Robotics/blob/main/ros_esp_mr/images/turtlesim_ultra_sonic_drive.gif)
-* **Encoders Publishing Node from ESP32**
-  -  ![alt text](https://github.com/noshluk2/ROS-ESP32-Mobile-Robotics/blob/main/ros_esp_mr/images/encoder_publisher.gif)
-* **Robot Driving over WiFi using teleOp package**
-  - ![alt text](https://github.com/noshluk2/ROS-ESP32-Mobile-Robotics/blob/main/ros_esp_mr/images/teleop_drive.gif)
-* **ROS Service for Encoder Ticks Calculation**
-  - ![alt text](https://github.com/noshluk2/ROS-ESP32-Mobile-Robotics/blob/main/ros_esp_mr/images/encoder_service_counter.gif)
+## How to Run
 
-* **Transforms and Odometery of Robot to Rviz**
-  - ![alt text](https://github.com/noshluk2/ROS-ESP32-Mobile-Robotics/blob/main/ros_esp_mr/images/odometery_transforms.gif)
+1. **Assemble the Robot**: Follow the instructions provided in the `resources` directory. Use the 3D models and the circuit design to assemble your robot.
 
+2. **Set Up Your Development Environment**:
+   - Install [PlatformIO](https://platformio.org/install/ide?install=vscode) in your preferred IDE (e.g., VSCode).
+   - Clone this repository to your local machine.
+   - Open the project folder in your IDE.
 
-----
-## Pre-Course Requirments
-**Hardware Requirments**
-- ESP32
-- Robotic Car Kit
-- Battery and Charger
-- Ultrasonic Sensor
-- Motor Driver ( L298D)
-- Jumper Wires
+3. **Program the Robot**:
+   - Navigate to the `microROS_bot` directory.
+   - Modify the `src/main.cpp` file as needed to customize the robot's behavior.
+   - Use PlatformIO to build and upload the code to your ESP32.
 
-**Software Based**
-* Ubuntu 20.04 (LTS)
-* ROS2 - Foxy Fitzroy
-* Python 3.6
-* Arduino Ide
-* Vscode
-
-**Skill Based**
-* Basic C++ and Python Programming
-* Basic ROS1 Nodes Communication
-* Launch Files
-* Motivated mind :)
----
-## Link to the Course
-
-**[[Discounted Link]](https://www.udemy.com/course/mastering-mobile-robot-with-ros-ardunio-car-sensors-to-ros/?couponCode=APRIL_END)**
-
-----
-
-## Instructor
-Muhammad Luqman (ROS Simulation and Control Systems) - [Profile Link](https://www.linkedin.com/in/muhammad-luqman-9b227a11b/)
-
-----
-## License
-
-Distributed under the GNU-GPL License. See `LICENSE` for more information.
+4. **Integrate MicroROS**:
+   - Ensure you have ROS2 installed on your computer.
+   - Follow the instructions in the `lib/ros_communication` directory to integrate MicroROS with your ESP32 robot.
 

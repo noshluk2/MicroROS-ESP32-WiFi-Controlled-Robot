@@ -1,9 +1,0 @@
-<launch>
-
-    <node pkg="ros_esp_mr" name="esp32_odom_publisher" type="diff_tf_odom.py" />
-
-    <node pkg="rviz" name="rviz_node" type="rviz" />
-
-    <node pkg="rosserial_python" name="wifi_esp32_communication_node" type="serial_node.py" args="tcp" output="screen"/>
-
-</launch>
