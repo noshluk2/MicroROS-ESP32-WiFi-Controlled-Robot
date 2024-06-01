@@ -1,7 +1,8 @@
 # MicroROS ESP32 WiFi Controlled Robot
 
-Welcome to the MicroROS ESP32 WiFi controlled robot project! This repository contains all the necessary files and instructions to build, program, and integrate a fully functional robot using the ESP32 and MicroROS with ROS2. -> [Course Link](https://www.udemy.com/course/mastering-mobile-robot-with-ros-ardunio-car-sensors-to-ros/?couponCode=MICROROS-UPDATE)
-![main](https://github.com/Robotisim/MicroROS-Wifi-Controlled-ESP32-Robot/blob/main/resources/thumbnail.png)
+Welcome to the MicroROS ESP32 WiFi controlled robot project! This repository contains all the necessary files and instructions to build, program, and integrate a fully functional robot using the ESP32 and MicroROS with ROS2.
+![main](https://github.com/noshluk2/MicroROS-ESP32-WiFi-Controlled-Robot/blob/main/resources/thumbnail.png)
+- **[[Get course Access]](https://robotisim.com/project-based-course/)**
 ## Introduction
 
 If you're passionate about robotics and eager to dive into hands-on hardware and ROS2 projects, this course is perfect for you. We'll guide you step-by-step in building a fully functional robot using the ESP32 and MicroROS with ROS2 over Wifi.
@@ -12,18 +13,18 @@ If you're passionate about robotics and eager to dive into hands-on hardware and
 - Assemble your robot from the ground up
 - Utilize 3D-printed parts and resources we provide
 - Learn about electronic connections and power distribution
-
+![main](https://github.com/noshluk2/MicroROS-ESP32-WiFi-Controlled-Robot/blob/main/resources/1_microROS_bot_circuit.png)
 **Section 2: Basic Programming**
 - Get started with programming using PlatformIO to control your robot's movements
 - Write simple code to drive the robot and navigate basic paths
 - Create your custom libraries for motor driving
 - Integrate the OLED display into your robot
-
+![main](https://github.com/noshluk2/MicroROS-ESP32-WiFi-Controlled-Robot/blob/main/resources/2_basic_programing.png)
 **Section 3: MicroROS Integration**
 - Integrate MicroROS with your ESP32 robot
 - Enhance your robot’s capabilities with advanced communication using ROS2
-
-By the end of this course, you'll have a deeper understanding of robotics, from hardware assembly to software integration, and you'll walk away with a robot that you built and programmed yourself. Join us on this exciting journey into the world of robotics!
+![main](https://github.com/noshluk2/MicroROS-ESP32-WiFi-Controlled-Robot/blob/main/resources/3_microROS_integeration.png)
+By the end of this course, you'll have a deeper understanding of robotics, from hardware assembly to software integration, and you'll walk away with a robot that you built and programmed yourself.
 
 ### Directory Details
 
