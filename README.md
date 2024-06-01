@@ -13,17 +13,17 @@ If you're passionate about robotics and eager to dive into hands-on hardware and
 - Assemble your robot from the ground up
 - Utilize 3D-printed parts and resources we provide
 - Learn about electronic connections and power distribution
-![main](https://github.com/noshluk2/MicroROS-ESP32-WiFi-Controlled-Robot/blob/main/resources/1_microROS_bot_circuit.png)
+![main](https://github.com/noshluk2/MicroROS-ESP32-WiFi-Controlled-Robot/blob/main/resources/1_microROS_bot_circuit.gif)
 **Section 2: Basic Programming**
 - Get started with programming using PlatformIO to control your robot's movements
 - Write simple code to drive the robot and navigate basic paths
 - Create your custom libraries for motor driving
 - Integrate the OLED display into your robot
-![main](https://github.com/noshluk2/MicroROS-ESP32-WiFi-Controlled-Robot/blob/main/resources/2_basic_programing.png)
+![main](https://github.com/noshluk2/MicroROS-ESP32-WiFi-Controlled-Robot/blob/main/resources/2_basic_programing.gif)
 **Section 3: MicroROS Integration**
 - Integrate MicroROS with your ESP32 robot
 - Enhance your robot’s capabilities with advanced communication using ROS2
-![main](https://github.com/noshluk2/MicroROS-ESP32-WiFi-Controlled-Robot/blob/main/resources/3_microROS_integeration.png)
+![main](https://github.com/noshluk2/MicroROS-ESP32-WiFi-Controlled-Robot/blob/main/resources/3_microROS_integeration.gif)
 By the end of this course, you'll have a deeper understanding of robotics, from hardware assembly to software integration, and you'll walk away with a robot that you built and programmed yourself.
 
 ### Directory Details
